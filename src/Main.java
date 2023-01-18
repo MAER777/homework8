@@ -139,30 +139,24 @@ public class Main {
             }
             System.out.print(array8[i1] + ", ");
         }
-        double[] array9 = new double[6];
-        array9[0] = 55;
-        array9[1] = 99;
-        array9[2] = 0.123;
-        array9[3] = 666.999;
-        array9[4] = 0.25;
-        array9[5] = 51.225;
-        for (int i2 = 5; i2 < array9.length; i2 = i2 - 1) {
-            if (i2 == array9.length - 6) {
-                System.out.println(array9[i2]);
-                break;
+        double[] array9 = {55, 99 ,0.123, 666.999, 0.25, 51.225};
+        for (int i2 = array9.length - 1; i2 > 0; i2--) {
+            System.out.print(array9[i2]);
+            if (i2 != 0) {
+                System.out.print(", ");
             }
-            System.out.print(array9[i2] + ", ");
         }
+        System.out.println();
     }
 
-    public static void task4() {
-        System.out.println("Задание 4");
-        int[] array1 = {1, 2 , 3};
-        for (int i = 0; i < array1.length; i++) {
-            if (array1[i] % 2 != 0) {
-                array1[i] = array1[i] + 1;
+        public static void task4() {
+            System.out.println("Задание 4");
+            int[] array1 = {1, 2, 3};
+            for (int i = 0; i < array1.length; i++) {
+                if (array1[i] % 2 != 0) {
+                    array1[i]++;
+                }
             }
+            System.out.println(Arrays.toString(array1));
         }
-        System.out.println(Arrays.toString(array1));
-    }
 }
